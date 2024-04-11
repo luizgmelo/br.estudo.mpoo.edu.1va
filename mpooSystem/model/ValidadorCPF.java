@@ -2,6 +2,7 @@ package model;
 import java.util.InputMismatchException;
 
 public class ValidadorCPF {
+	public static final String CPF_INVALIDO = "CPF informado é inválido";
 	
 	public static boolean validarCPF(String CPF) {
 		CPF=CPF.replace(".", "");
