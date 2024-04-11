@@ -16,6 +16,14 @@ public class Usuario extends Pessoa  {
 		this.senha = senha;
 	}
 
+	public String getLogin() {
+		return login;
+	}
+
+	public String getSenha() {
+		return senha;
+	}
+
 	@Override
 	public String toString() {
 		return "Usuario [login=" + login + ", senha=" + senha + "]";
