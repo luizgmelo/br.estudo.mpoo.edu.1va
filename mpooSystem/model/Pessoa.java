@@ -16,13 +16,12 @@ public class Pessoa {
 		this.cpf = cpf;
 	}
 
+	public String getCpf() {
+		return cpf;
+	}
+
 	@Override
 	public String toString() {
 		return "Pessoa [nome=" + nome + ", cpf=" + cpf + ", sexo=" + sexo + "]";
 	}
-
-	
-	
-	
-	
 }
