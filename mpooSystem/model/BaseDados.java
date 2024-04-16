@@ -38,6 +38,19 @@ public class BaseDados {
 		return null;
 	}
 	
+	public static boolean isAdmin(String chaveAcesso) {
+		if (chaveAcesso == null) {
+			return false;
+		}
+		
+		for (Pessoa pessoa : pessoas)
+			if (pessoa instanceof Administrador)
+				if(((Administrador) pessoa).getChaveDeAcesso().equals(chaveAcesso)) {
+					return true;
+				}
+		return false;
+	}
+	
 	public static boolean isPessoa(Pessoa pessoa) {
 		return pessoas.contains(buscarPessoa(pessoa.getCpf()));
 	}
