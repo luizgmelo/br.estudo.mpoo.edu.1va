@@ -40,7 +40,7 @@ public class BaseDados {
 	}
 	
 	public static boolean isUsuario(String login, String senha) {
-		if (login == null && senha == null) {
+		if (login == null || senha == null) {
 			return false;
 		}
 		
