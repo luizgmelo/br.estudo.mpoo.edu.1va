@@ -11,6 +11,9 @@ public class BaseDados {
 	
 	private static void inicializarBase() {
 		pessoas = new ArrayList<Pessoa>();
+		adicionarPessoa(new Administrador("Godofredo Silva", "358.251.830-27", "Masculino", "admin", "admin", "ADMIN001"));
+		adicionarPessoa(new Usuario("Maria Silva", "833.533.163-34", "Feminino", "mariasilva", "mAriA"));
+		adicionarPessoa(new Usuario("José Santos", "833.533.163-34", "Masculino", "joseSantos", "joseSantos"));
 	}
 	
 	public static boolean adicionarPessoa(Pessoa pessoa) {
