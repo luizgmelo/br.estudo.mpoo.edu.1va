@@ -5,7 +5,7 @@ import java.util.ArrayList;
 public class BaseDados {
 	private static ArrayList<Pessoa> pessoas;
 		
-	public void createBase() {
+	public static void createBase() {
 		inicializarBase();
 	}
 	
