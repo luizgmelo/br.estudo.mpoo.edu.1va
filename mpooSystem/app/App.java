@@ -1,5 +1,6 @@
 package app;
 
+import controller.CadastrarController;
 import controller.ChaveAcessoController;
 import controller.LoginController;
 
@@ -22,6 +23,7 @@ public class App {
 		MenuController menuController = new MenuController(menuView, cadastrarView, loginView, chaveAcessoView);
 		LoginController loginController = new LoginController(loginView, menuController);
 		ChaveAcessoController chaveAcessoController = new ChaveAcessoController(menuController, chaveAcessoView);
+		CadastrarController cadastroController = new CadastrarController(cadastrarView);
 	}
 
 }
